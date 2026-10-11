@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
 <meta charset="utf-8">
@@ -57,7 +57,6 @@
   <!-- HERO / KARUZELA -->
   <section id="top" class="relative h-[72vh] min-h-[520px] max-h-[760px] overflow-hidden bg-graphite text-white" aria-label="Dołącz do nas">
 
-    <!-- Slajdy ze zdjęciami tła: ścieżki wpisujesz w HERO_PHOTOS na dole pliku -->
     <div data-slide class="absolute inset-0 bg-cover bg-center bg-gradient-to-br from-pck to-[#7f1010] opacity-100 transition-opacity duration-1000">
       <span data-ph class="absolute top-5 left-6 bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 1 · 1920×900 px</span>
     </div>
@@ -76,13 +75,11 @@
 
     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/10 pointer-events-none"></div>
 
-    <!-- Numeracja slajdów i pauza -->
     <div class="absolute top-5 right-6 z-20 flex items-center gap-3 text-sm font-bold">
       <span id="counter" class="tabular-nums">01 / 05</span>
       <button id="pp" type="button" class="grid place-items-center w-9 h-9 rounded-full border-2 border-white/80 hover:bg-white hover:text-graphite transition-colors text-xs" aria-label="Zatrzymaj automatyczną zmianę zdjęć">❚❚</button>
     </div>
 
-    <!-- Treść: napis wyżej, czerwony przycisk pod nim, lewy dolny róg -->
     <div class="hero-content absolute inset-0 z-10 mx-auto max-w-[1180px] px-6 pb-12 md:pb-16">
       <div class="hero-title-group">
         <h1 class="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[0.95] drop-shadow-lg">Dołącz do nas</h1>
@@ -96,20 +93,18 @@
     <div class="mx-auto max-w-[1180px] px-6">
       <div class="flex flex-wrap items-end justify-between gap-4 mb-10">
         <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Aktualności</h2>
-        <!-- UZUPEŁNIJ: link do strony z aktualnościami koła -->
         <a href="#aktualnosci" class="font-bold text-pck hover:underline">Wszystkie aktualności</a>
       </div>
 
       <div class="grid gap-6 md:grid-cols-3">
-        <!-- UZUPEŁNIJ: data, tytuł i opis każdej aktualności -->
         <article class="group flex flex-col overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 hover:shadow-lg transition-shadow">
           <div class="relative aspect-[16/10] bg-neutral-200 grid place-items-center" data-news>
             <span data-ph class="text-xs font-bold text-graphite bg-amber-200 px-2 py-1 rounded">Miniatura 16:10</span>
           </div>
           <div class="flex flex-1 flex-col gap-3 p-6">
-            <time class="text-sm font-bold text-pck"><span class="bg-amber-200 text-graphite px-1.5 rounded">data</span></time>
+            <time class="text-sm font-bold text-pck"><span class="bg-amber-200 text-graphite px-1.5 rounded">12 marca 2026</span></time>
             <h3 class="text-xl font-extrabold leading-snug group-hover:text-pck">Warsztaty z pierwszej pomocy w szkole</h3>
-            <p class="text-neutral-600">Dwie godziny praktyki: resuscytacja, opatrywanie ran i jak wezwać pomoc.</p>
+            <p class="text-neutral-600">Dwie godziny praktyki: resuscytacja, opatrywanie ran i jak prawidłowo wezwać pomoc.</p>
           </div>
         </article>
 
@@ -118,9 +113,9 @@
             <span data-ph class="text-xs font-bold text-graphite bg-amber-200 px-2 py-1 rounded">Miniatura 16:10</span>
           </div>
           <div class="flex flex-1 flex-col gap-3 p-6">
-            <time class="text-sm font-bold text-pck"><span class="bg-amber-200 text-graphite px-1.5 rounded">data</span></time>
+            <time class="text-sm font-bold text-pck"><span class="bg-amber-200 text-graphite px-1.5 rounded">28 lutego 2026</span></time>
             <h3 class="text-xl font-extrabold leading-snug group-hover:text-pck">Akcja krwiodawstwa na uczelni</h3>
-            <p class="text-neutral-600">Zapraszamy do oddania krwi i porozmawiania z wolontariuszami o zasadach krwiodawstwa.</p>
+            <p class="text-neutral-600">Zapraszamy do oddania krwi i porozmawiania z wolontariuszami o zasadach honorowego krwiodawstwa.</p>
           </div>
         </article>
 
@@ -129,9 +124,9 @@
             <span data-ph class="text-xs font-bold text-graphite bg-amber-200 px-2 py-1 rounded">Miniatura 16:10</span>
           </div>
           <div class="flex flex-1 flex-col gap-3 p-6">
-            <time class="text-sm font-bold text-pck"><span class="bg-amber-200 text-graphite px-1.5 rounded">data</span></time>
+            <time class="text-sm font-bold text-pck"><span class="bg-amber-200 text-graphite px-1.5 rounded">15 lutego 2026</span></time>
             <h3 class="text-xl font-extrabold leading-snug group-hover:text-pck">Nabór nowych wolontariuszy</h3>
-            <p class="text-neutral-600">Nie potrzebujesz doświadczenia. Pierwsze spotkanie to okazja, by poznać grupę.</p>
+            <p class="text-neutral-600">Nie potrzebujesz wcześniejszego doświadczenia. Pierwsze spotkanie to idealna okazja, by poznać grupę.</p>
           </div>
         </article>
       </div>
@@ -219,7 +214,6 @@
         </div>
         <a href="https://www.instagram.com/pck_sim_warszawa/" target="_blank" rel="noopener" class="font-bold text-pck hover:underline">Więcej zdjęć na Instagramie</a>
       </div>
-      <!-- UZUPEŁNIJ: zdjęcia do galerii (ścieżki w GALLERY_PHOTOS na dole pliku) -->
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <div data-gal class="relative aspect-[4/3] rounded-xl bg-neutral-300 grid place-items-center overflow-hidden"><span data-ph class="bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 1 · 1200×900 px</span></div>
         <div data-gal class="relative aspect-[4/3] rounded-xl bg-neutral-300 grid place-items-center overflow-hidden"><span data-ph class="bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 2 · 1200×900 px</span></div>
@@ -236,114 +230,15 @@
     <div class="mx-auto max-w-[1180px] px-6">
       <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">Historia wydarzeń</h2>
       <p class="text-neutral-600 max-w-2xl mb-12">Najważniejsze akcje, warsztaty i projekty grupy.</p>
-      <!-- UZUPEŁNIJ: daty, tytuły i opisy kolejnych wydarzeń (od najnowszego) -->
+      
       <ol class="relative border-l-4 border-pck ml-2 md:ml-4 grid gap-10">
         <li class="relative pl-8 md:pl-10">
           <span class="absolute -left-[10px] top-1.5 w-4 h-4 rounded-full bg-pck ring-4 ring-white"></span>
-          <time class="block text-sm font-extrabold text-pck mb-1"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: rok]</span></time>
-          <h3 class="text-xl font-extrabold mb-2"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: tytuł wydarzenia]</span></h3>
-          <p class="text-neutral-600 max-w-2xl"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: krótki opis]</span></p>
+          <time class="block text-sm font-extrabold text-pck mb-1">2026</time>
+          <h3 class="text-xl font-extrabold mb-2">Akcja edukacyjna "Bezpieczna Szkoła"</h3>
+          <p class="text-neutral-600 max-w-2xl">Przeprowadzenie cyklu szkoleń z zakresu pierwszej pomocy i reagowania w sytuacjach kryzysowych dla warszawskich placówek edukacyjnych.</p>
         </li>
         <li class="relative pl-8 md:pl-10">
           <span class="absolute -left-[10px] top-1.5 w-4 h-4 rounded-full bg-pck ring-4 ring-white"></span>
-          <time class="block text-sm font-extrabold text-pck mb-1"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: rok]</span></time>
-          <h3 class="text-xl font-extrabold mb-2"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: tytuł wydarzenia]</span></h3>
-          <p class="text-neutral-600 max-w-2xl"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: krótki opis]</span></p>
-        </li>
-        <li class="relative pl-8 md:pl-10">
-          <span class="absolute -left-[10px] top-1.5 w-4 h-4 rounded-full bg-pck ring-4 ring-white"></span>
-          <time class="block text-sm font-extrabold text-pck mb-1"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: rok]</span></time>
-          <h3 class="text-xl font-extrabold mb-2"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: tytuł wydarzenia]</span></h3>
-          <p class="text-neutral-600 max-w-2xl"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: krótki opis]</span></p>
-        </li>
-        <li class="relative pl-8 md:pl-10">
-          <span class="absolute -left-[10px] top-1.5 w-4 h-4 rounded-full bg-pck ring-4 ring-white"></span>
-          <time class="block text-sm font-extrabold text-pck mb-1"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: rok]</span></time>
-          <h3 class="text-xl font-extrabold mb-2"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: tytuł wydarzenia]</span></h3>
-          <p class="text-neutral-600 max-w-2xl"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: krótki opis]</span></p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- NUMERY ALARMOWE (ściągawka) -->
-  <section id="numery" class="bg-soft py-16 md:py-24">
-    <div class="mx-auto max-w-[1180px] px-6">
-      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">Numery alarmowe</h2>
-      <p class="text-neutral-600 mb-10 max-w-2xl">Zapisz je w telefonie. Dzwoń tylko wtedy, gdy ktoś jest w zagrożeniu życia, zdrowia lub mienia.</p>
-
-      <a href="tel:112" class="flex flex-wrap items-center gap-6 rounded-2xl bg-pck text-white p-8 hover:bg-pckd transition-colors">
-        <span class="text-6xl md:text-7xl font-extrabold leading-none">112</span>
-        <span class="max-w-md text-white/90">Numer alarmowy w całej Unii Europejskiej. Połączenie jest bezpłatne i działa także w telefonie bez karty SIM.</span>
-      </a>
-
-      <ul class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <li><a href="tel:997" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">997</span><span class="block mt-1 text-neutral-700 font-semibold">Policja</span></a></li>
-        <li><a href="tel:998" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">998</span><span class="block mt-1 text-neutral-700 font-semibold">Straż pożarna</span></a></li>
-        <li><a href="tel:999" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">999</span><span class="block mt-1 text-neutral-700 font-semibold">Pogotowie ratunkowe</span></a></li>
-        <li><a href="tel:986" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">986</span><span class="block mt-1 text-neutral-700 font-semibold">Straż miejska</span><span class="block mt-1 text-sm text-neutral-500">nie we wszystkich miastach</span></a></li>
-      </ul>
-
-      <h3 class="mt-12 mb-4 text-xl font-extrabold">Wsparcie i telefony zaufania</h3>
-      <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <li><a href="tel:116111" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">116 111</span><span class="block mt-1 text-neutral-700 font-semibold">Telefon zaufania dla dzieci i młodzieży</span></a></li>
-        <li><a href="tel:116123" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">116 123</span><span class="block mt-1 text-neutral-700 font-semibold">Kryzysowy Telefon Zaufania</span></a></li>
-        <li><a href="tel:800702222" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">800 702 222</span><span class="block mt-1 text-neutral-700 font-semibold">Centrum Wsparcia w kryzysie psychicznym</span></a></li>
-        <li><a href="tel:226687000" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">22 668 70 00</span><span class="block mt-1 text-neutral-700 font-semibold">Niebieska Linia (przemoc w rodzinie)</span></a></li>
-      </ul>
-    </div>
-  </section>
-</main>
-
-<!-- STOPKA -->
-<footer id="kontakt" class="bg-graphite text-neutral-300 pt-16 pb-8">
-  <div class="mx-auto max-w-[1180px] px-6">
-    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-
-      <div>
-        <h3 class="text-white font-extrabold mb-4">O nas</h3>
-        <p>Grupa SIM PCK Warszawa, młodzi wolontariusze Polskiego Czerwonego Krzyża. Uczymy pierwszej pomocy, wspieramy innych i działamy na rzecz zdrowia i bezpieczeństwa.</p>
-        <p class="mt-3 text-sm text-neutral-300">Organizator: Mazowiecki Oddział Okręgowy PCK w Warszawie</p>
-      </div>
-
-      <div>
-        <h3 class="text-white font-extrabold mb-4">Nawigacja</h3>
-        <ul class="grid gap-2">
-          <li><a href="#aktualnosci" class="hover:text-white hover:underline">Aktualności</a></li>
-          <li><a href="#co-robimy" class="hover:text-white hover:underline">Co robimy</a></li>
-          <li><a href="#zasady" class="hover:text-white hover:underline">Zasady</a></li>
-          <li><a href="#galeria" class="hover:text-white hover:underline">Galeria</a></li>
-          <li><a href="#historia" class="hover:text-white hover:underline">Historia wydarzeń</a></li>
-          <li><a href="#numery" class="hover:text-white hover:underline">Numery alarmowe</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-white font-extrabold mb-4">Kontakt</h3>
-        <ul class="grid gap-2">
-          <li>ul. Szańcowej 25, Warszawa</li>
-          <li><a href="mailto:warszawa.sim@pck.pl" class="hover:text-white hover:underline break-all">warszawa.sim@pck.pl</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-white font-extrabold mb-4">Media społecznościowe</h3>
-        <ul class="grid gap-2">
-          <li><a href="https://www.facebook.com/WarszawskaGrupaSIMPCK/" target="_blank" rel="noopener" class="hover:text-white hover:underline">Facebook</a></li>
-          <li><a href="https://www.instagram.com/pck_sim_warszawa/" target="_blank" rel="noopener" class="hover:text-white hover:underline">Instagram (@pck_sim_warszawa)</a></li>
-          <li><a href="https://pck.pl" rel="noopener" class="hover:text-white hover:underline">pck.pl</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="border-t border-neutral-700 mt-12 pt-6 flex flex-wrap justify-between gap-4 text-sm">
-      <span>© 2026 Młodzież PCK Warszawa · Wersja robocza, strona nieoficjalna</span>
-      <!-- UZUPEŁNIJ: link do polityki prywatności -->
-      <a href="#" class="hover:text-white hover:underline">Polityka prywatności</a>
-    </div>
-  </div>
-</footer>
-
-<script src="js/script.js"></script>
-</body>
-</html>
+          <time class="block text-sm font-extrabold text-pck mb-1">2025</time>
+          <h3 class="text-xl font-extrabold mb-2">
