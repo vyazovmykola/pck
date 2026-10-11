@@ -1,0 +1,349 @@
+  <!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PCK SIM Warszawa</title>
+<link rel="icon" type="image/png" href="../pck-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="js/tailwind.config.js"></script>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+</head>
+<body class="bg-white text-graphite font-sans antialiased leading-relaxed">
+
+<svg width="0" height="0" class="absolute" aria-hidden="true">
+  <symbol id="cross" viewBox="0 0 100 100"><path d="M35 5h30v30h30v30H65v30H35V65H5V35h30z" fill="currentColor"/></symbol>
+</svg>
+
+<!-- TOPBAR -->
+<div class="bg-graphite text-white text-sm">
+  <div class="mx-auto max-w-[1180px] px-6 py-2 flex flex-wrap justify-between gap-2">
+    <span>Mazowsze · Warszawa</span>
+    <a href="https://pck.pl" rel="noopener" class="opacity-90 hover:opacity-100 hover:underline">Oficjalna strona PCK: pck.pl</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-30 bg-white border-b border-neutral-200">
+  <div class="mx-auto max-w-[1180px] px-6 h-[76px] flex items-center justify-between gap-4">
+    <a href="#top" class="flex items-center gap-3" aria-label="Młodzież PCK Warszawa, strona główna">
+      <img src="../pck-image.png" alt="Logo Polskiego Czerwonego Krzyża" class="w-12 h-12 object-contain shrink-0">
+      <span class="leading-tight">
+        <b class="block text-lg font-extrabold">Młodzież PCK</b>
+        <small class="block text-neutral-500 text-sm">Warszawa</small>
+      </span>
+    </a>
+
+    <button id="mb" type="button" class="md:hidden border-2 border-graphite rounded-full px-4 py-1.5 font-bold" aria-expanded="false" aria-controls="nav">Menu</button>
+
+    <nav id="nav" aria-label="Menu główne" class="hidden md:block absolute md:static top-full left-0 right-0 bg-white md:bg-transparent border-b md:border-0 border-neutral-200 shadow-lg md:shadow-none px-6 md:px-0 py-3 md:py-0">
+      <ul class="flex flex-col md:flex-row gap-1 md:gap-7 font-bold">
+        <li><a href="#aktualnosci" class="block py-2 md:py-1.5 border-b-[3px] border-transparent hover:border-pck hover:text-pck">Aktualności</a></li>
+        <li><a href="#co-robimy" class="block py-2 md:py-1.5 border-b-[3px] border-transparent hover:border-pck hover:text-pck">Co robimy</a></li>
+        <li><a href="#zasady" class="block py-2 md:py-1.5 border-b-[3px] border-transparent hover:border-pck hover:text-pck">Zasady</a></li>
+        <li><a href="#galeria" class="block py-2 md:py-1.5 border-b-[3px] border-transparent hover:border-pck hover:text-pck">Galeria</a></li>
+        <li><a href="#historia" class="block py-2 md:py-1.5 border-b-[3px] border-transparent hover:border-pck hover:text-pck">Historia</a></li>
+        <li><a href="#kontakt" class="block py-2 md:py-1.5 border-b-[3px] border-transparent hover:border-pck hover:text-pck">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO / KARUZELA -->
+  <section id="top" class="relative h-[72vh] min-h-[520px] max-h-[760px] overflow-hidden bg-graphite text-white" aria-label="Dołącz do nas">
+
+    <!-- Slajdy ze zdjęciami tła: ścieżki wpisujesz w HERO_PHOTOS na dole pliku -->
+    <div data-slide class="absolute inset-0 bg-cover bg-center bg-gradient-to-br from-pck to-[#7f1010] opacity-100 transition-opacity duration-1000">
+      <span data-ph class="absolute top-5 left-6 bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 1 · 1920×900 px</span>
+    </div>
+    <div data-slide class="absolute inset-0 bg-cover bg-center bg-gradient-to-br from-[#3A3A3A] to-graphite opacity-0 transition-opacity duration-1000">
+      <span data-ph class="absolute top-5 left-6 bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 2 · 1920×900 px</span>
+    </div>
+    <div data-slide class="absolute inset-0 bg-cover bg-center bg-gradient-to-br from-pckd to-[#4A0905] opacity-0 transition-opacity duration-1000">
+      <span data-ph class="absolute top-5 left-6 bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 3 · 1920×900 px</span>
+    </div>
+    <div data-slide class="absolute inset-0 bg-cover bg-center bg-gradient-to-br from-[#55524F] to-graphite opacity-0 transition-opacity duration-1000">
+      <span data-ph class="absolute top-5 left-6 bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 4 · 1920×900 px</span>
+    </div>
+    <div data-slide class="absolute inset-0 bg-cover bg-center bg-gradient-to-br from-pck to-graphite opacity-0 transition-opacity duration-1000">
+      <span data-ph class="absolute top-5 left-6 bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 5 · 1920×900 px</span>
+    </div>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/10 pointer-events-none"></div>
+
+    <!-- Numeracja slajdów i pauza -->
+    <div class="absolute top-5 right-6 z-20 flex items-center gap-3 text-sm font-bold">
+      <span id="counter" class="tabular-nums">01 / 05</span>
+      <button id="pp" type="button" class="grid place-items-center w-9 h-9 rounded-full border-2 border-white/80 hover:bg-white hover:text-graphite transition-colors text-xs" aria-label="Zatrzymaj automatyczną zmianę zdjęć">❚❚</button>
+    </div>
+
+    <!-- Treść: napis wyżej, czerwony przycisk pod nim, lewy dolny róg -->
+    <div class="hero-content absolute inset-0 z-10 mx-auto max-w-[1180px] px-6 pb-12 md:pb-16">
+      <div class="hero-title-group">
+        <h1 class="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[0.95] drop-shadow-lg">Dołącz do nas</h1>
+      </div>
+      <a href="https://forms.cloud.microsoft/e/K50MMEduAU" target="_blank" rel="noopener" class="hero-btn inline-flex items-center bg-pck hover:bg-pckd text-white font-extrabold text-lg rounded-full px-9 py-4 shadow-lg transition-colors">Dołącz</a>
+    </div>
+  </section>
+
+  <!-- AKTUALNOŚCI -->
+  <section id="aktualnosci" class="bg-[#fffaf7] py-16 md:py-24">
+    <div class="mx-auto max-w-[1180px] px-6">
+      <div class="flex flex-wrap items-end justify-between gap-4 mb-10">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Aktualności</h2>
+        <!-- UZUPEŁNIJ: link do strony z aktualnościami koła -->
+        <a href="#aktualnosci" class="font-bold text-pck hover:underline">Wszystkie aktualności</a>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <!-- UZUPEŁNIJ: data, tytuł i opis każdej aktualności -->
+        <article class="group flex flex-col overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 hover:shadow-lg transition-shadow">
+          <div class="relative aspect-[16/10] bg-neutral-200 grid place-items-center" data-news>
+            <span data-ph class="text-xs font-bold text-graphite bg-amber-200 px-2 py-1 rounded">Miniatura 16:10</span>
+          </div>
+          <div class="flex flex-1 flex-col gap-3 p-6">
+            <time class="text-sm font-bold text-pck"><span class="bg-amber-200 text-graphite px-1.5 rounded">data</span></time>
+            <h3 class="text-xl font-extrabold leading-snug group-hover:text-pck">Warsztaty z pierwszej pomocy w szkole</h3>
+            <p class="text-neutral-600">Dwie godziny praktyki: resuscytacja, opatrywanie ran i jak wezwać pomoc.</p>
+          </div>
+        </article>
+
+        <article class="group flex flex-col overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 hover:shadow-lg transition-shadow">
+          <div class="relative aspect-[16/10] bg-neutral-200 grid place-items-center" data-news>
+            <span data-ph class="text-xs font-bold text-graphite bg-amber-200 px-2 py-1 rounded">Miniatura 16:10</span>
+          </div>
+          <div class="flex flex-1 flex-col gap-3 p-6">
+            <time class="text-sm font-bold text-pck"><span class="bg-amber-200 text-graphite px-1.5 rounded">data</span></time>
+            <h3 class="text-xl font-extrabold leading-snug group-hover:text-pck">Akcja krwiodawstwa na uczelni</h3>
+            <p class="text-neutral-600">Zapraszamy do oddania krwi i porozmawiania z wolontariuszami o zasadach krwiodawstwa.</p>
+          </div>
+        </article>
+
+        <article class="group flex flex-col overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 hover:shadow-lg transition-shadow">
+          <div class="relative aspect-[16/10] bg-neutral-200 grid place-items-center" data-news>
+            <span data-ph class="text-xs font-bold text-graphite bg-amber-200 px-2 py-1 rounded">Miniatura 16:10</span>
+          </div>
+          <div class="flex flex-1 flex-col gap-3 p-6">
+            <time class="text-sm font-bold text-pck"><span class="bg-amber-200 text-graphite px-1.5 rounded">data</span></time>
+            <h3 class="text-xl font-extrabold leading-snug group-hover:text-pck">Nabór nowych wolontariuszy</h3>
+            <p class="text-neutral-600">Nie potrzebujesz doświadczenia. Pierwsze spotkanie to okazja, by poznać grupę.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CO ROBIMY -->
+  <section id="co-robimy" class="bg-soft py-16 md:py-24">
+    <div class="mx-auto max-w-[1180px] px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Co robimy</h2>
+      <p class="max-w-2xl text-neutral-600 mb-10">Misją Czerwonego Krzyża jest zapobieganie cierpieniu ludzi i łagodzenie jego skutków oraz ochrona godności człowieka. W Warszawie realizujemy ją jako młodzi wolontariusze.</p>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="flex flex-col overflow-hidden rounded-2xl bg-white">
+          <div class="relative h-40 bg-pck grid place-items-center" data-card>
+            <svg viewBox="0 0 100 100" class="w-14 h-14 text-white"><use href="#cross"/></svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-extrabold mb-2">Pierwsza pomoc</h3>
+            <p class="text-neutral-600 text-[.98rem]">Warsztaty i pokazy, po których wiesz, jak zachować się w nagłej sytuacji.</p>
+          </div>
+        </article>
+
+        <article class="flex flex-col overflow-hidden rounded-2xl bg-white">
+          <div class="relative h-40 bg-graphite grid place-items-center" data-card>
+            <svg viewBox="0 0 100 100" class="w-14 h-14 text-white"><use href="#cross"/></svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-extrabold mb-2">Krwiodawstwo</h3>
+            <p class="text-neutral-600 text-[.98rem]">Informujemy o oddawaniu krwi i pomagamy w organizacji akcji.</p>
+          </div>
+        </article>
+
+        <article class="flex flex-col overflow-hidden rounded-2xl bg-white">
+          <div class="relative h-40 bg-pckd grid place-items-center" data-card>
+            <svg viewBox="0 0 100 100" class="w-14 h-14 text-white"><use href="#cross"/></svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-extrabold mb-2">Pomoc humanitarna</h3>
+            <p class="text-neutral-600 text-[.98rem]">Wspieramy osoby poszkodowane w klęskach i kryzysach, włączając się w zbiórki.</p>
+          </div>
+        </article>
+
+        <article class="flex flex-col overflow-hidden rounded-2xl bg-white">
+          <div class="relative h-40 bg-pck grid place-items-center" data-card>
+            <svg viewBox="0 0 100 100" class="w-14 h-14 text-white"><use href="#cross"/></svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-extrabold mb-2">Edukacja</h3>
+            <p class="text-neutral-600 text-[.98rem]">Rozmawiamy o zdrowiu, bezpieczeństwie i wartościach Ruchu Czerwonego Krzyża.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 ZASAD -->
+  <section id="zasady" class="bg-[#fffaf7] py-16 md:py-24">
+    <div class="mx-auto max-w-[1180px] px-6">
+      <div class="flex flex-wrap items-end justify-between gap-4 mb-4">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">7 zasad Czerwonego Krzyża</h2>
+        <a href="https://pck.pl" rel="noopener" class="font-bold text-pck hover:underline">Więcej na pck.pl</a>
+      </div>
+      <p class="max-w-2xl text-neutral-600 mb-10">Wszyscy wolontariusze Ruchu Czerwonego Krzyża i Czerwonego Półksiężyca kierują się tymi samymi zasadami.</p>
+
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-xl bg-white border border-neutral-200 border-t-4 border-t-pck p-6"><h3 class="font-extrabold text-lg mb-2">Humanitaryzm</h3><p class="text-neutral-600 text-[.95rem]">Zapobiegamy cierpieniu ludzi, chronimy życie i zdrowie oraz szanujemy godność człowieka.</p></div>
+        <div class="rounded-xl bg-white border border-neutral-200 border-t-4 border-t-pck p-6"><h3 class="font-extrabold text-lg mb-2">Bezstronność</h3><p class="text-neutral-600 text-[.95rem]">Nie robimy różnic ze względu na narodowość, rasę, religię czy poglądy. Pomagamy według potrzeb.</p></div>
+        <div class="rounded-xl bg-white border border-neutral-200 border-t-4 border-t-pck p-6"><h3 class="font-extrabold text-lg mb-2">Neutralność</h3><p class="text-neutral-600 text-[.95rem]">Nie uczestniczymy w konfliktach zbrojnych ani w sporach politycznych, rasowych, religijnych czy ideologicznych.</p></div>
+        <div class="rounded-xl bg-white border border-neutral-200 border-t-4 border-t-pck p-6"><h3 class="font-extrabold text-lg mb-2">Niezależność</h3><p class="text-neutral-600 text-[.95rem]">Działamy samodzielnie, zgodnie z zasadami Ruchu, nawet gdy wspieramy władze w pomocy humanitarnej.</p></div>
+        <div class="rounded-xl bg-white border border-neutral-200 border-t-4 border-t-pck p-6"><h3 class="font-extrabold text-lg mb-2">Dobrowolność</h3><p class="text-neutral-600 text-[.95rem]">Pomagamy z własnej woli, bez szukania korzyści.</p></div>
+        <div class="rounded-xl bg-white border border-neutral-200 border-t-4 border-t-pck p-6"><h3 class="font-extrabold text-lg mb-2">Jedność</h3><p class="text-neutral-600 text-[.95rem]">W każdym kraju działa jedno stowarzyszenie Czerwonego Krzyża, otwarte dla wszystkich.</p></div>
+        <div class="rounded-xl bg-white border border-neutral-200 border-t-4 border-t-pck p-6"><h3 class="font-extrabold text-lg mb-2">Powszechność</h3><p class="text-neutral-600 text-[.95rem]">Ruch Czerwonego Krzyża i Czerwonego Półksiężyca obejmuje swoją działalnością cały świat.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="bg-soft py-16 md:py-24">
+    <div class="mx-auto max-w-[1180px] px-6">
+      <div class="flex flex-wrap items-end justify-between gap-4 mb-10">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">Galeria</h2>
+          <p class="text-neutral-600 max-w-2xl">Zdjęcia z naszych warsztatów, akcji i spotkań.</p>
+        </div>
+        <a href="https://www.instagram.com/pck_sim_warszawa/" target="_blank" rel="noopener" class="font-bold text-pck hover:underline">Więcej zdjęć na Instagramie</a>
+      </div>
+      <!-- UZUPEŁNIJ: zdjęcia do galerii (ścieżki w GALLERY_PHOTOS na dole pliku) -->
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div data-gal class="relative aspect-[4/3] rounded-xl bg-neutral-300 grid place-items-center overflow-hidden"><span data-ph class="bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 1 · 1200×900 px</span></div>
+        <div data-gal class="relative aspect-[4/3] rounded-xl bg-neutral-300 grid place-items-center overflow-hidden"><span data-ph class="bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 2 · 1200×900 px</span></div>
+        <div data-gal class="relative aspect-[4/3] rounded-xl bg-neutral-300 grid place-items-center overflow-hidden"><span data-ph class="bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 3 · 1200×900 px</span></div>
+        <div data-gal class="relative aspect-[4/3] rounded-xl bg-neutral-300 grid place-items-center overflow-hidden"><span data-ph class="bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 4 · 1200×900 px</span></div>
+        <div data-gal class="relative aspect-[4/3] rounded-xl bg-neutral-300 grid place-items-center overflow-hidden"><span data-ph class="bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 5 · 1200×900 px</span></div>
+        <div data-gal class="relative aspect-[4/3] rounded-xl bg-neutral-300 grid place-items-center overflow-hidden"><span data-ph class="bg-amber-200 text-graphite text-xs font-bold px-2 py-1 rounded">Zdjęcie 6 · 1200×900 px</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORIA WYDARZEŃ -->
+  <section id="historia" class="bg-[#fffaf7] py-16 md:py-24">
+    <div class="mx-auto max-w-[1180px] px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">Historia wydarzeń</h2>
+      <p class="text-neutral-600 max-w-2xl mb-12">Najważniejsze akcje, warsztaty i projekty grupy.</p>
+      <!-- UZUPEŁNIJ: daty, tytuły i opisy kolejnych wydarzeń (od najnowszego) -->
+      <ol class="relative border-l-4 border-pck ml-2 md:ml-4 grid gap-10">
+        <li class="relative pl-8 md:pl-10">
+          <span class="absolute -left-[10px] top-1.5 w-4 h-4 rounded-full bg-pck ring-4 ring-white"></span>
+          <time class="block text-sm font-extrabold text-pck mb-1"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: rok]</span></time>
+          <h3 class="text-xl font-extrabold mb-2"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: tytuł wydarzenia]</span></h3>
+          <p class="text-neutral-600 max-w-2xl"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: krótki opis]</span></p>
+        </li>
+        <li class="relative pl-8 md:pl-10">
+          <span class="absolute -left-[10px] top-1.5 w-4 h-4 rounded-full bg-pck ring-4 ring-white"></span>
+          <time class="block text-sm font-extrabold text-pck mb-1"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: rok]</span></time>
+          <h3 class="text-xl font-extrabold mb-2"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: tytuł wydarzenia]</span></h3>
+          <p class="text-neutral-600 max-w-2xl"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: krótki opis]</span></p>
+        </li>
+        <li class="relative pl-8 md:pl-10">
+          <span class="absolute -left-[10px] top-1.5 w-4 h-4 rounded-full bg-pck ring-4 ring-white"></span>
+          <time class="block text-sm font-extrabold text-pck mb-1"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: rok]</span></time>
+          <h3 class="text-xl font-extrabold mb-2"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: tytuł wydarzenia]</span></h3>
+          <p class="text-neutral-600 max-w-2xl"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: krótki opis]</span></p>
+        </li>
+        <li class="relative pl-8 md:pl-10">
+          <span class="absolute -left-[10px] top-1.5 w-4 h-4 rounded-full bg-pck ring-4 ring-white"></span>
+          <time class="block text-sm font-extrabold text-pck mb-1"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: rok]</span></time>
+          <h3 class="text-xl font-extrabold mb-2"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: tytuł wydarzenia]</span></h3>
+          <p class="text-neutral-600 max-w-2xl"><span class="bg-amber-200 text-graphite px-1.5 rounded">[UZUPEŁNIJ: krótki opis]</span></p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- NUMERY ALARMOWE (ściągawka) -->
+  <section id="numery" class="bg-soft py-16 md:py-24">
+    <div class="mx-auto max-w-[1180px] px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">Numery alarmowe</h2>
+      <p class="text-neutral-600 mb-10 max-w-2xl">Zapisz je w telefonie. Dzwoń tylko wtedy, gdy ktoś jest w zagrożeniu życia, zdrowia lub mienia.</p>
+
+      <a href="tel:112" class="flex flex-wrap items-center gap-6 rounded-2xl bg-pck text-white p-8 hover:bg-pckd transition-colors">
+        <span class="text-6xl md:text-7xl font-extrabold leading-none">112</span>
+        <span class="max-w-md text-white/90">Numer alarmowy w całej Unii Europejskiej. Połączenie jest bezpłatne i działa także w telefonie bez karty SIM.</span>
+      </a>
+
+      <ul class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <li><a href="tel:997" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">997</span><span class="block mt-1 text-neutral-700 font-semibold">Policja</span></a></li>
+        <li><a href="tel:998" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">998</span><span class="block mt-1 text-neutral-700 font-semibold">Straż pożarna</span></a></li>
+        <li><a href="tel:999" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">999</span><span class="block mt-1 text-neutral-700 font-semibold">Pogotowie ratunkowe</span></a></li>
+        <li><a href="tel:986" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">986</span><span class="block mt-1 text-neutral-700 font-semibold">Straż miejska</span><span class="block mt-1 text-sm text-neutral-500">nie we wszystkich miastach</span></a></li>
+      </ul>
+
+      <h3 class="mt-12 mb-4 text-xl font-extrabold">Wsparcie i telefony zaufania</h3>
+      <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <li><a href="tel:116111" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">116 111</span><span class="block mt-1 text-neutral-700 font-semibold">Telefon zaufania dla dzieci i młodzieży</span></a></li>
+        <li><a href="tel:116123" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">116 123</span><span class="block mt-1 text-neutral-700 font-semibold">Kryzysowy Telefon Zaufania</span></a></li>
+        <li><a href="tel:800702222" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">800 702 222</span><span class="block mt-1 text-neutral-700 font-semibold">Centrum Wsparcia w kryzysie psychicznym</span></a></li>
+        <li><a href="tel:226687000" class="block h-full rounded-xl bg-white p-6 ring-1 ring-neutral-200 hover:ring-pck transition"><span class="block text-3xl font-extrabold tracking-tight">22 668 70 00</span><span class="block mt-1 text-neutral-700 font-semibold">Niebieska Linia (przemoc w rodzinie)</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- STOPKA -->
+<footer id="kontakt" class="bg-graphite text-neutral-300 pt-16 pb-8">
+  <div class="mx-auto max-w-[1180px] px-6">
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+      <div>
+        <h3 class="text-white font-extrabold mb-4">O nas</h3>
+        <p>Grupa SIM PCK Warszawa, młodzi wolontariusze Polskiego Czerwonego Krzyża. Uczymy pierwszej pomocy, wspieramy innych i działamy na rzecz zdrowia i bezpieczeństwa.</p>
+        <p class="mt-3 text-sm text-neutral-300">Organizator: Mazowiecki Oddział Okręgowy PCK w Warszawie</p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-extrabold mb-4">Nawigacja</h3>
+        <ul class="grid gap-2">
+          <li><a href="#aktualnosci" class="hover:text-white hover:underline">Aktualności</a></li>
+          <li><a href="#co-robimy" class="hover:text-white hover:underline">Co robimy</a></li>
+          <li><a href="#zasady" class="hover:text-white hover:underline">Zasady</a></li>
+          <li><a href="#galeria" class="hover:text-white hover:underline">Galeria</a></li>
+          <li><a href="#historia" class="hover:text-white hover:underline">Historia wydarzeń</a></li>
+          <li><a href="#numery" class="hover:text-white hover:underline">Numery alarmowe</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-extrabold mb-4">Kontakt</h3>
+        <ul class="grid gap-2">
+          <li>ul. Szańcowej 25, Warszawa</li>
+          <li><a href="mailto:warszawa.sim@pck.pl" class="hover:text-white hover:underline break-all">warszawa.sim@pck.pl</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-extrabold mb-4">Media społecznościowe</h3>
+        <ul class="grid gap-2">
+          <li><a href="https://www.facebook.com/WarszawskaGrupaSIMPCK/" target="_blank" rel="noopener" class="hover:text-white hover:underline">Facebook</a></li>
+          <li><a href="https://www.instagram.com/pck_sim_warszawa/" target="_blank" rel="noopener" class="hover:text-white hover:underline">Instagram (@pck_sim_warszawa)</a></li>
+          <li><a href="https://pck.pl" rel="noopener" class="hover:text-white hover:underline">pck.pl</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-neutral-700 mt-12 pt-6 flex flex-wrap justify-between gap-4 text-sm">
+      <span>© 2026 Młodzież PCK Warszawa · Wersja robocza, strona nieoficjalna</span>
+      <!-- UZUPEŁNIJ: link do polityki prywatności -->
+      <a href="#" class="hover:text-white hover:underline">Polityka prywatności</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
